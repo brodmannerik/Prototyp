@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Drums</title>
+  <script>
+    window.mediaPipeScriptsLoaded = {
+      drawingUtils: false,
+      camera: false,
+      faceMesh: false
+    };
+  </script>
+  <script
+          src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js"
+          onload="window.mediaPipeScriptsLoaded.drawingUtils = true; console.log('Drawing utils loaded');"
+  ></script>
+  <script
+          src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js"
+          onload="window.mediaPipeScriptsLoaded.camera = true; console.log('Camera utils loaded');"
+  ></script>
+  <script
+          src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh@0.4/face_mesh.js"
+          onload="window.mediaPipeScriptsLoaded.faceMesh = true; console.log('Face mesh loaded');"
+  ></script>
+  <script type="module" crossorigin src="/Prototyp/assets/index-D35RrjLe.js"></script>
+  <link rel="stylesheet" crossorigin href="/Prototyp/assets/index-QUybBIZ2.css">
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
